@@ -67,7 +67,7 @@ The following hosted solutions and apps provide no-code or low-code extensions f
 
 ## 🔓 Open-Source GitHub Projects
 
-Explore open-source commerce platforms, checkout engines, promotion frameworks, and cart validation plugins. Entries are sorted descending by **GitHub Star Count**:
+Explore open-source commerce platforms, checkout engines, promotion frameworks, and cart validation plugins. Entries are sorted descending by **GitHub Stars_Count**:
 
 ### 1. **[Medusa](https://github.com/medusajs/medusa)** [![Stars](https://img.shields.io/github/stars/medusajs/medusa?style=social&color=white)](https://github.com/medusajs/medusa/stargazers)
 - **License**: MIT (Core)
@@ -144,7 +144,7 @@ Contributions are warmly welcomed! Help keep this directory comprehensive and up
 
 1. 🍴 Fork the repository.
 2. 🌿 Create a feature branch (`git checkout -b feature/new-checkout-tool`).
-3. 📝 Add your entry ensuring accurate pricing tiers, free trial specifics, license details, and proper star badges.
+3. 📝 Add your entry ensuring accurate pricing tiers, free trial specifics, license details, and proper Stars_Badges.
 4. 🚀 Open a Pull Request with a clear description of the project.
 
 ---

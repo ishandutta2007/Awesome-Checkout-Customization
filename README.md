@@ -32,67 +32,27 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global e-commerce checkout and shopping cart software market is valued at approximately **$10B to $13B** (with the broader e-commerce personalization and promotion layer adding another **$8B+**), expanding at a CAGR of ~14%–19%. The sector exhibits **two-tier market dynamics**: the underlying platform layer is highly concentrated around major platforms (e.g., Shopify dominating SMB and mid-market hosted checkout), while the ecosystem of checkout customization, promotion engines, and upsell apps remains **moderately to highly fragmented**, with hundreds of specialized SaaS solutions competing alongside emerging open-source composable commerce frameworks.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Shopify Scripts](https://shopify.dev/docs/apps/checkout)** (**Sunsetting June 30, 2026**)
-
-  **Ruby-based checkout logic engine for Shopify Plus** allowing line item, shipping, and payment customization. **Critical**: Shopify Scripts stopped accepting new edits on April 15, 2026, and **stopped executing entirely on June 30, 2026** . Any store still relying on Scripts is running frozen code with no fix path. Migration to **Shopify Functions** or supported apps is mandatory, not optional . **Pricing**: Included with Shopify Plus (from $2,300/month). **Free tier**: None. **Best for**: **legacy reference only—do not build new logic on Scripts**. If you have existing Scripts, audit them immediately and rebuild in Functions .
-
-
-
-- **[Bold Custom Pricing](https://www.boldcommerce.com/)**
-
-  **Customer-specific and quantity-based pricing app** for Shopify. Uses customer tags to assign wholesale, VIP, or group pricing; supports percentage, amount off, or fixed price discounts; quantity breaks; auto-tagging by country or order history; CSV import for detailed pricing . **Pricing**: **Essential** $29/month (1–10 tags), **Standard** $69/month, **Complete** $129/month (detailed pricing, CSV, POS) . **Free tier**: 14-day trial. **Best for**: Shopify merchants needing B2B/wholesale pricing tiers without custom development.
-
-
-
-- **[Discount Ninja](https://apps.shopify.com/discount-url)**
-
-  **Promotion engine app for Shopify** with advanced discount stacking, automatic promo items, and complex rule combinations. Users report it fills gaps in Shopify's native discount limitations . **Pricing**: Quote-only; per-month fee based on plan. **Free tier**: Trial available. **Best for**: merchants needing sophisticated promotion logic (bundles, auto-add gifts, stacked discounts) beyond Shopify's built-in capabilities.
-
-
-
-- **[CartHook](https://carthook.com/)**
-
-  **Post-purchase upsell platform for Shopify** with no-code drag-and-drop offer builder, A/B testing, and one-click upsell acceptance. Claims ROI of 1700% (every $100 spent returns $1,700 in upsells) . **Pricing**: Quote-only; based on monthly order volume. **Free tier**: None. **Best for**: Shopify merchants wanting to increase AOV with post-purchase offers without disrupting the initial checkout flow.
-
-
-
-- **[Rebuy Engine](https://rebuyengine.com/)**
-
-  **Personalization and upsell engine** with Smart Links that add items to cart via URL arguments (variant IDs, quantity, discount code, redirect destination) . **Pricing**: Quote-only. **Free tier**: None. **Best for**: merchants wanting cart manipulation and personalized upsells via URL-based smart links.
-
-
-
-- **[Fast Simon](https://www.fastsimon.com/)**
-
-  **Search, merchandising, and personalization SDK** for e-commerce. Provides JavaScript SDK and NPM package for integration; focuses on product discovery rather than checkout logic directly . **Pricing**: Quote-only. **Free tier**: None. **Best for**: merchants wanting AI-powered search and product recommendations that influence cart contents before checkout.
-
-
-
-- **[Peak Dynamic Pricing](https://apps.shopify.com/peak-dynamic-pricing)**
-
-  **Rule-based price automation app** for Shopify. Schedules price changes by date/time, adjusts based on demand or inventory, tracks timing impact on sales . **Pricing**: **Ground** free (1 rule), **Basecamp** $1.99/month (5 rules), **Summit** $4.99/month (unlimited), **Everest** $11.99/month (1-minute precision) . **Free tier**: Yes, 1 active rule. **Best for**: merchants wanting automated, time-based price changes without custom development.
-
-
-
-- **[Script Editor](https://shopify.dev/docs/apps/checkout)** (**Deprecated**)
-
-  **The Shopify Plus app where Ruby Scripts were written and managed**. With Scripts sunset on June 30, 2026, the Script Editor has no execution path. Shopify directs merchants to **Shopify Functions** (WebAssembly-based, runs server-side) and **Checkout UI Extensions** (sandboxed UI blocks) for equivalent logic . **Pricing**: N/A. **Free tier**: N/A. **Best for**: **historical reference only—do not use for new development**.
-
-
+| Platform / App | Company Size (Revenue / Valuation) | Pricing (Starting Tier) | Free Tier / Free Trial Limits | Description & Key Strengths |
+|---|---|---|---|---|
+| **[Shopify Scripts & Script Editor](https://shopify.dev/docs/apps/checkout)** | ~$11.6B Revenue / ~$210B+ Market Cap | From **$2,300/mo** (included with Shopify Plus) | **No free tier or trial** (Requires active Shopify Plus subscription; Scripts stopped execution June 30, 2026, migrating to Shopify Functions) | Legacy Ruby-based checkout logic engine for Shopify Plus allowing line item, shipping, and payment customization. **Deprecated / Sunsetting June 30, 2026**; stores must migrate to WebAssembly Shopify Functions. |
+| **[Bold Custom Pricing](https://www.boldcommerce.com/)** | ~$25M–$30M ARR / $44M VC Funded | From **$29/mo** (Essential plan; $69/mo Standard, $129/mo Complete) | **14-day free trial** (Full feature access to test wholesale/VIP tagging and quantity break discounts) | Customer-specific and quantity-based pricing app for Shopify. Uses customer tags to assign wholesale, VIP, or tiered group pricing without custom code. |
+| **[Rebuy Engine](https://rebuyengine.com/)** | ~$12M–$19M ARR / $21.4M VC Funded | From **$25/mo** (Build Your Own / a la carte packages; Full suite from $534/mo) | **14-day free trial**; also offers **Rebuy Monetize free tier** (Free post-purchase offers earning transaction revenue, dev store access) | AI-powered personalization, Smart Cart, and upsell engine with Smart Links and checkout extensions to dynamically adjust cart line items. |
+| **[Fast Simon](https://www.fastsimon.com/)** | ~$5M–$15M ARR (Private) | From **$39.99/mo** (Starter plan; Essential plan at $99.99/mo) | **Free tier available** (up to 100 monthly sessions, includes AI instant search & filters); **14-day free trial** on paid tiers | Search, merchandising, and product personalization SDK/app providing AI-driven search, recommendations, and cart-intent customization before checkout. |
+| **[CartHook](https://carthook.com/)** | Processed $1B+ GMV (Acquired by Pantastic / Shop Circle) | **$0/mo base** on Pay As You Go ($0.12/order after free tier + 1% rev share) or **$49/mo** (Growth plan) | **Free tier: 20 orders/mo** on Pay As You Go plan ($0/mo base fee); **14-day free trial** on Growth ($49/mo) and Scale ($149/mo) plans | Post-purchase upsell and cross-sell platform with drag-and-drop funnel builder, checkout extensions, and one-click upsell acceptance. |
+| **[Discount Ninja](https://apps.shopify.com/discount-url)** | ~$300K–$1M ARR (Ninja Commerce / Limoni Apps) | From **$49/mo** (Starter plan, up to 500 orders/mo; Pro $99/mo, Grow $199/mo) | **14-day free trial** (Includes full access to discount stacking, gifts, and promotion rules across all subscription plans) | Advanced promotion engine for Shopify with automated gifts, complex discount stacking, and dynamic promotion rule combinations. |
+| **[Peak Dynamic Pricing](https://apps.shopify.com/peak-dynamic-pricing)** | Bootstrapped / Micro-SaaS (Pricing.AI) | From **$1.99/mo** (Basecamp plan; Summit $4.99/mo, Everest $11.99/mo) | **Free forever plan: Ground** (Free with 1 active pricing rule); **14-day free trial** on paid tiers | Rule-based and time-based price automation app for Shopify that schedules scheduled and demand-based price changes. |
 
 ## Open-Source GitHub Projects
 
